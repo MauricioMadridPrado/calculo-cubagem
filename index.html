@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Calculo de metragem</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <h1 class="cabecalho__titulo">Calculo de cuagem</h1>
+    </header class="imagens__container"> 
+
+<div class="container">
+    <section class="imagens__container">
+            <ul class="lista__produtos">
+          <li class="produtos__img">
+            <img src="./assets/img/multy.png" alt="Multy" />
+          </li>
+          <li class="produtos__img">
+            <img src="./assets/img/multy_leve.png" alt="Multy leve" />
+          </li>
+          <li class="produtos__img">
+            <img src="./assets/img/multy_max.png" alt="Multy max" />
+          </li>
+        </ul>
+    </section>
+    <section class="tabela__produto">
+        <div class="dados__produto">
+            <h2 class="produto__nome">Multy</h2>
+        </div>
+        <table class="tabela__produto">
+            <tr class="tabela__produto__titulo">
+
+                <th>Altura (m)</th>
+                <th>Largura(m)</th>
+                <th>Comprimento (m)</th>
+                <th>Peso</th>
+                <th>Nª de volumes</th>
+                <th>Metros cúbicos(m³)</th>
+            </tr>
+            <tr class="linha__produto">
+
+                <td data-dado>1</td>
+                <td data-dado>0.26</td>
+                <td data-dado>0.26</td>
+                <td data-dado>16.5</td>
+                <td class="contador" data-contador ><input min="0"  type="number"></td>
+                <td data-total></td>
+            </tr>
+            <tr class="linha__produto">
+
+                <td data-dado>1</td>
+                <td data-dado>0.46</td>
+                <td data-dado>0.46</td>
+                <td data-dado>36.5</td>
+                <td class="contador" data-contador><input min="0"  type="number"></td>
+                <td data-total></td>
+            </tr>
+
+        </table>
+
+    </section>
+</div>
+<script src="./js/main.js"></script>
+  </body>
+</html>

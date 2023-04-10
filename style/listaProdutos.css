@@ -1,0 +1,39 @@
+.lista__produtos {
+  height: 400px;
+  overflow: auto;
+  list-style: none;
+}
+.produtos__img {
+}
+.produtos__img img {
+}
+table,
+th,
+tr,
+td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.25rem;
+}
+.tabela__produto {
+    box-shadow: 0 0  0.5em black;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: rgb(241, 226, 199);
+}
+.contador input{
+    padding: 0.5em;
+    background: transparent;
+    width: 4em;
+    text-align: center;
+}
+.dados__produto {
+}
+.produto__nome {
+}
+.tabela__produto {
+}
+.tabela__produto__titulo {
+}
