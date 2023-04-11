@@ -1,33 +1,30 @@
 import { criaFormulario } from "./criaFormulario.js";
+import { alteraValor } from "./alteraValor.js";
 
 criaFormulario();
-function alteraValor(){
 const linhas = document.querySelectorAll(".linha__produto");
-let j = 0;
+
 let i = 0;
-let total = 0;
 linhas.forEach(() => {
+  let totalCubagem = 0;
   const contador = document.querySelector(`[data-contador${i}]`);
-  const valorFinal = document.querySelector(`[data-total${i}]`);
 
-  contador.addEventListener("change", (event) => {
-    let posicao = event.target.parentNode.dataset.local;
-    let quantidadeTotal = event.target.value;
-    let totalCubica = 1;
-
-    const metragens = document.querySelectorAll(`[data-dado${posicao}]`);
-    metragens.forEach((valor) => {
-      totalCubica *= valor.innerHTML;
-    });
-    const totalCubagem = document.getElementById('total__cubagem');
-
-    valorFinal.innerHTML = totalCubica * quantidadeTotal;
-    total = parseFloat(valorFinal.innerHTML)
-  });
+  contador.addEventListener("click", alterandoOValor);
   i++;
 });
+let valores = [];
+function alterandoOValor() {
+  valores = [];
+  const valorTotal = document.querySelectorAll(".valor__total");
+  const localCubagem = document.getElementById('total__cubagem')
+  valorTotal.forEach((valor) => {
+    valores.push(parseFloat(valor.innerHTML));
+    const teste2 = Array.from(valores);
+    const valorCubagemTotal = teste2.reduce((a, b) => a + b, 0);
+    console.log(valorCubagemTotal);
+    localCubagem.innerHTML = `Total de metros cúbicos: ${valorCubagemTotal.toFixed(2)}`;
+  });
+  const ondeFicaOValorFinalDaCubagem =
+    document.getElementById("total__cubagem");
 }
-
-
-
 alteraValor();
