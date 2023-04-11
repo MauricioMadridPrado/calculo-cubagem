@@ -13,7 +13,7 @@ tr,
 td {
   border: 1px solid black;
   text-align: center;
-  padding: 1em;
+  padding: 0.1em 1em;
   font-size: 1.25rem;
 }
 .tabela__produto {
@@ -22,6 +22,8 @@ td {
     padding: 1em;
     border-radius: 1em;
     background-color: rgb(241, 226, 199);
+    height: 600px;
+    overflow: auto;
 }
 .contador input{
     padding: 0.5em;

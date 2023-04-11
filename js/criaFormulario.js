@@ -1,5 +1,4 @@
 export function criaFormulario() {
-
   const multy = [
     {
       nome: "Multy",
@@ -11,38 +10,35 @@ export function criaFormulario() {
     {
       nome: "Multy",
       altura: 1,
-      largura: 0.46,
+      largura: 0.26,
       comprimento: 25,
       peso: 26.5,
     },
     {
       nome: "Multy",
-      altura: 10,
-      largura: 0.66,
+      altura: 1.2,
+      largura: 0.26,
       comprimento: 25,
       peso: 36.5,
     },
     {
       nome: "Multy",
       altura: 1.5,
-      largura: 0.66,
+      largura: 0.26,
       comprimento: 25,
       peso: 36.5,
     },
-  ]
+  ];
 
   let i = 0;
   multy.forEach((dado) => {
-
-    const nomeProduto = document.getElementById("nome__produto");
+    const dadosDoProduto = document.getElementById("nome__produto");
     const formulario = document.getElementById("formulario");
 
-    nomeProduto.innerHTML = 
-    `
+    dadosDoProduto.innerHTML = `
     <h2 class="produto__total__cubagem" id="total__cubagem"></h2>
-    <h2 class="produto__total__peso" id="total__peso"></h2>
-    `
-    ;
+    <h2 class="produto__total__peso" id="total__peso">Total peso: <span id="kilogramas"></span></h2>
+    `;
     formulario.innerHTML += `
         <tr class="linha__produto">
              <td data-dado>${dado.nome}</td>
@@ -55,10 +51,5 @@ export function criaFormulario() {
         </tr>
     `;
     i++;
-    
   });
-  
 }
-
-
-
