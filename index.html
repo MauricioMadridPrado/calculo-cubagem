@@ -13,26 +13,15 @@
     </header class="imagens__container"> 
 
 <div class="container">
-    <section class="imagens__container">
-            <ul class="lista__produtos">
-          <li class="produtos__img">
-            <img src="./assets/img/multy.png" alt="Multy" />
-          </li>
-          <li class="produtos__img">
-            <img src="./assets/img/multy_leve.png" alt="Multy leve" />
-          </li>
-          <li class="produtos__img">
-            <img src="./assets/img/multy_max.png" alt="Multy max" />
-          </li>
-        </ul>
-    </section>
+
     <section class="tabela__produto">
-        <div class="dados__produto">
-            <h2 class="produto__nome">Multy</h2>
+        <div id="nome__produto" class="dados__produto">
+            
         </div>
         <table class="tabela__produto">
+          <thead>
             <tr class="tabela__produto__titulo">
-
+                <th>Nome produto</th>
                 <th>Altura (m)</th>
                 <th>Largura(m)</th>
                 <th>Comprimento (m)</th>
@@ -40,29 +29,15 @@
                 <th>Nª de volumes</th>
                 <th>Metros cúbicos(m³)</th>
             </tr>
-            <tr class="linha__produto">
+          </thead>
+          <tbody id="formulario">
 
-                <td data-dado>1</td>
-                <td data-dado>0.26</td>
-                <td data-dado>0.26</td>
-                <td data-dado>16.5</td>
-                <td class="contador" data-contador ><input min="0"  type="number"></td>
-                <td data-total></td>
-            </tr>
-            <tr class="linha__produto">
-
-                <td data-dado>1</td>
-                <td data-dado>0.46</td>
-                <td data-dado>0.46</td>
-                <td data-dado>36.5</td>
-                <td class="contador" data-contador><input min="0"  type="number"></td>
-                <td data-total></td>
-            </tr>
+          </tbody>
 
         </table>
 
     </section>
 </div>
-<script src="./js/main.js"></script>
+<script src="./js/main.js" type="module"></script>
   </body>
 </html>

@@ -1,26 +1,36 @@
-const contadores = document.querySelectorAll("[data-contador]");
+import { criaFormulario } from "./criaFormulario.js";
+
+criaFormulario();
+
+const linhas = document.querySelectorAll('.linha__produto')
+
+let i = 0;
+linhas.forEach( ()=>{
+
+  const contador = document.querySelector(`[data-contador${i}]`)
+  const valorFinal = document.querySelector(`[data-total${i}]`)
+  const localValorCubagem = document.getElementById('total__cubagem')
+
+  let totalMetrosCubicos = 0;
+  contador.addEventListener('change', (event)=>{
+       let posicao = event.target.parentNode.dataset.local;
+    let quantidadeTotal = event.target.value;
+    let totalCubica = 1;
+
+    const metragens = document.querySelectorAll(`[data-dado${posicao}]`)
+    metragens.forEach(  (valor) =>{
+
+      totalCubica *= valor.innerHTML;
+      
+    })
+
+    localValorCubagem.innerHTML = `Total metros cúbicos:${totalMetrosCubicos.toFixed(2)}`;
+    valorFinal.innerHTML = totalCubica * quantidadeTotal;
 
 
-// console.log(metrosCubicos.innerHTML)
-contadores.forEach((contador) => {
-  contador.addEventListener("change", (event) => {
-    let valorTotal = 1;
-    const alvo = event.target.parentNode.nextSibling.nextSibling;
-    const linha = event.target.parentNode.parentNode.innerHTML;
+  })
 
-    
-
-    
-    const dadosProduto = document.querySelectorAll("[data-dado]");
-    dadosProduto.forEach((dado) => {
-      valorConvertido = parseFloat(dado.innerHTML);
-      valorTotal *= valorConvertido;
-    });
-
-    let valorQuantidade = parseFloat(event.target.value)
-    let totalMetragem = (valorTotal * valorQuantidade).toFixed(2);
+  i++;
+})
 
 
-    alvo.innerHTML = `${totalMetragem}`;
-  });
-});
