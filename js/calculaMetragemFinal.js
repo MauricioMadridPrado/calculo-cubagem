@@ -21,7 +21,7 @@ export function calculaMetragemFinal() {
       const valorCubagemTotal = cubagem.reduce((a, b) => a + b, 0);
       localCubagem.innerHTML = `Total de metros cúbicos: ${valorCubagemTotal.toFixed(
         2
-      )}`;
+      )}m³`;
     });
 
   }

@@ -19,7 +19,6 @@ export function alteraValor(){
           totalCubica *= valor.innerHTML;
         });
     
-    
         valorFinal.innerHTML = totalCubica * quantidadeTotal;
         total = parseFloat(valorFinal.innerHTML)
       });

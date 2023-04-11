@@ -164,8 +164,8 @@ export function criaFormulario() {
     const formulario = document.getElementById("formulario");
 
     dadosDoProduto.innerHTML = `
-    <h2 class="produto__total__cubagem" id="total__cubagem">Total de metros cúbicos:0</h2>
-    <h2 class="produto__total__peso" id="kilogramas">Total kilos dos produtos :0</h2>
+    <h2 class="produto__total__cubagem" id="total__cubagem">Total de metros cúbicos:0m³</h2>
+    <h2 class="produto__total__peso" id="kilogramas">Total kilos dos produtos :0Kg</h2>
     `;
     formulario.innerHTML += `
         <tr class="linha__produto">

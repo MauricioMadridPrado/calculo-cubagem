@@ -21,7 +21,7 @@ export function somaOPeso() {
   
         const valorKilosTotal = kilos.reduce((a,b)=> a + b, 0)
   
-        localOndeFicaOPeso.innerHTML = `Total kilos dos produtos: ${valorKilosTotal.toFixed(2)}`
+        localOndeFicaOPeso.innerHTML = `Total kilos dos produtos: ${valorKilosTotal.toFixed(2)}Kg`
       });
   
     }

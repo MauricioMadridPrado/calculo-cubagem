@@ -13,6 +13,7 @@ td {
 .tabela__produto__container {
   height: 300px;
   overflow: auto;
+  
 }
 .tabela__produto,
 .tabela__produto__container {
@@ -20,13 +21,14 @@ td {
   margin: 1em;
   padding: 1em;
   border-radius: 1em;
-  background-color: rgb(241, 226, 199);
+  background-color: var(--for-produtos)
 }
 .contador input {
   padding: 0.5em;
   background: transparent;
   width: 4em;
   text-align: center;
+  color:var(--cor-letra)
 }
 .dados__produto {
 }

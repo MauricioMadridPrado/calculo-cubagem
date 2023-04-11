@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 2em;
     left: 2em;
-    padding: 2em;
+    padding: 0 2em;
     box-shadow: 0 0 0.5em black;
     display: flex;
     gap: 1em;
@@ -10,21 +10,21 @@
 }
 .nome__produto:hover{
     transition: 0.6s;
-    background-color: rgb(241, 226, 199)
+    background-color: var(--for-produtos)
 }
 .nome__produto ul {
     list-style: none;
     text-align: center;
     box-shadow: 0 0 0.5em black;
     height: 100px;
-    padding: 1.25em;
+    padding: 0 1.25em;
     overflow: auto;
 }
 
 .lista__de__nomes li a{
     font-size: 1.5rem;
     text-decoration: none;
-    color: black;
+    color: var(--cor-letras);
 }
 
 .lista__de__nomes li a:hover{

@@ -2,15 +2,23 @@
 @import url('./header.css');
 @import url('./listaProdutos.css');
 @import url('./listaDeNomes.css');
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+:root{
+    --cor-fundo:#19376D;
+    --for-produtos:#576CBC;
+    --cor-nomes:  #A5D7E8;
+    --cor-letras:#e3f5fc;
 }
 
 body{
+    background: var(--cor-fundo);
+    color: var(--cor-letras);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
 }
 .container{
     display: flex;
