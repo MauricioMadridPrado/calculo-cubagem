@@ -53,7 +53,7 @@ export function criaFormulario() {
     {
       nome: "Multy leve",
       altura: 1.5,
-      largura: 0.20,
+      largura: 0.21,
       comprimento: 25,
       peso: 35.5,
     },
@@ -66,7 +66,7 @@ export function criaFormulario() {
     nomes.push(dado.nome);
     dadosDoProduto.innerHTML = `
     <h2 class="produto__total__cubagem" id="total__cubagem">${0}</h2>
-    <h2 class="produto__total__peso" id="total__peso">Total peso: <span id="kilogramas"></span></h2>
+    <h2 class="produto__total__peso" id="kilogramas">${0}</h2>
     `;
     formulario.innerHTML += `
         <tr class="linha__produto">
@@ -77,21 +77,14 @@ export function criaFormulario() {
             <td data-peso${i}>${dado.peso}</td>
             <td class="contador" data-contador${i} data-local=${i} ><input min="0" value="0"  type="number"></td>
             <td class="valor__total" data-total${i}>0</td>
+            <td class="valor__kilos" data-kilos${i}>0</td>
         </tr>
     `;
     i++;
 
 
     ;
-    const localNomes = document.getElementById('teste31')
-    console.log(nomes)
-    nomes.forEach(nome =>{
-      localNomes.innerHTML += 
-      `
-      <li id="${nome}">${nome}</li>
-      `;
-      console.log(nome)
-    })
+
   });
 
 }

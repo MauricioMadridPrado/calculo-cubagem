@@ -8,6 +8,7 @@ export function alteraValor(){
       const valorFinal = document.querySelector(`[data-total${i}]`);
     
       contador.addEventListener("change", (event) => {
+        
         let posicao = event.target.parentNode.dataset.local;
         let quantidadeTotal = event.target.value;
         let totalCubica = 1;
