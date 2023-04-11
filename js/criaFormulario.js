@@ -1,156 +1,156 @@
 export function criaFormulario() {
   const listaDeNomes = document.getElementById('lista__de__nomes')
   const nomes =  [];
-  const multy = [
+  const produto = [
     {
-      nome: "Multy",
+      nome: "produto1",
       altura: 0.5,
       largura: 0.26,
       comprimento: 25,
       peso: 16.5,
     },
     {
-      nome: "Multy",
+      nome: "produto1",
       altura: 1,
       largura: 0.26,
       comprimento: 25,
       peso: 26.5,
     },
     {
-      nome: "Multy",
+      nome: "produto1",
       altura: 1.2,
       largura: 0.26,
       comprimento: 25,
       peso: 36.5,
     },
     {
-      nome: "Multy",
+      nome: "produto1",
       altura: 1.5,
       largura: 0.26,
       comprimento: 25,
       peso: 41.5,
     },
     {
-      nome: "Multy leve",
+      nome: "produto2",
       altura: 0.5,
       largura: 0.20,
       comprimento: 25,
       peso: 10.5,
     },
     {
-      nome: "Multy leve",
+      nome: "produto2",
       altura: 1,
       largura: 0.20,
       comprimento: 25,
       peso: 20.5,
     },
     {
-      nome: "Multy leve",
+      nome: "produto2",
       altura: 1.2,
       largura: 0.20,
       comprimento: 25,
       peso: 30.5,
     },
     {
-      nome: "Multy leve",
+      nome: "produto2",
       altura: 1.5,
       largura: 0.21,
       comprimento: 25,
       peso: 35.5,
     },
     {
-      nome: "Multy max",
+      nome: "produto3",
       altura: 0.5,
       largura: 0.20,
       comprimento: 25,
       peso: 10.5,
     },
     {
-      nome: "Multy max",
+      nome: "produto3",
       altura: 1,
       largura: 0.20,
       comprimento: 25,
       peso: 20.5,
     },
     {
-      nome: "Multy max",
+      nome: "produto3",
       altura: 1.2,
       largura: 0.20,
       comprimento: 25,
       peso: 30.5,
     },
     {
-      nome: "Multy max",
+      nome: "produto3",
       altura: 1.5,
       largura: 0.21,
       comprimento: 25,
       peso: 35.5,
     },
     {
-      nome: "Titan",
+      nome: "produto4",
       altura: 1,
       largura: 0.20,
       comprimento: 25,
       peso: 20.5,
     },
     {
-      nome: "Titan",
+      nome: "produto4",
       altura: 1.2,
       largura: 0.20,
       comprimento: 25,
       peso: 30.5,
     },
     {
-      nome: "Titan",
+      nome: "produto4",
       altura: 1.5,
       largura: 0.21,
       comprimento: 25,
       peso: 35.5,
     },
     {
-      nome: "Titan",
+      nome: "produto4",
       altura: 1.8,
       largura: 0.20,
       comprimento: 25,
       peso: 30.5,
     },
     {
-      nome: "Titan",
+      nome: "produto4",
       altura: 2,
       largura: 0.21,
       comprimento: 25,
       peso: 35.5,
     },
     {
-      nome: "Morada",
+      nome: "produto5",
       altura: 1,
       largura: 0.20,
       comprimento: 25,
       peso: 20.5,
     },
     {
-      nome: "Morada",
+      nome: "produto5",
       altura: 1.2,
       largura: 0.20,
       comprimento: 25,
       peso: 30.5,
     },
     {
-      nome: "Morada",
+      nome: "produto5",
       altura: 1.5,
       largura: 0.21,
       comprimento: 25,
       peso: 35.5,
     },
     {
-      nome: "Morada",
+      nome: "produto5",
       altura: 1.8,
       largura: 0.20,
       comprimento: 25,
       peso: 30.5,
     },
     {
-      nome: "Morada",
+      nome: "produto5",
       altura: 2,
       largura: 0.21,
       comprimento: 25,
@@ -159,7 +159,7 @@ export function criaFormulario() {
   ];
 
   let i = 0;
-  multy.forEach((dado) => {
+  produto.forEach((dado) => {
     const dadosDoProduto = document.getElementById("nome__produto");
     const formulario = document.getElementById("formulario");
 
@@ -182,7 +182,7 @@ export function criaFormulario() {
     i++;
     ;
   });
-  multy.forEach(  a =>{
+  produto.forEach(  a =>{
     if(!nomes.includes(a.nome)){
       nomes.push(a.nome)
     } 
