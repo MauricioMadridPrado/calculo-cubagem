@@ -8,20 +8,25 @@
     <title>Calculo de metragem</title>
   </head>
   <body>
+
     <header class="cabecalho">
-      <h1 class="cabecalho__titulo">Calculo de cuagem</h1>
+      <h1 class="cabecalho__titulo">Calculo de cubagem</h1>
     </header class="imagens__container"> 
-    <div id="nome__produto" class="dados__produto">
-            
-    </div>
+
+      <nav  class="nome__produto">
+        <div id="nome__produto">
+<!-- onde vai ir os valores finais de metragem e peso -->
+        </div>
+        <div class="pesquisa__container"> 
+          <label class="pesquisa__rotulo" for="pesquisar">Pesquisar</label>
+          <input class="pesquisa__input" id="pesquisa" name="pesquisar" type="text">
+        <ul class="lista__de__nomes" id="lista__de__nomes" >
+<!-- onde vai ir a lista de nomes -->
+        </ul>
+      </div>
+    </nav>
 <div class="container">
-  <div >
-    <ul id="teste31">
-
-    </ul>
-  </div>
-    <section class="tabela__produto">
-
+    <section class="tabela__produto__container">
         <table class="tabela__produto">
           <thead>
             <tr class="tabela__produto__titulo">
@@ -35,7 +40,7 @@
                 <th>Peso(kg)</th>
             </tr>
           </thead>
-          <tbody id="formulario">
+          <tbody class="produtos" id="formulario">
 
           </tbody>
 

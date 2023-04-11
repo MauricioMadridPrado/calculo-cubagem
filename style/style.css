@@ -1,14 +1,12 @@
 @import url('./header.css');
 @import url('./header.css');
 @import url('./listaProdutos.css');
+@import url('./listaDeNomes.css');
 :root{
 
 }
 
 body{
-    width: 100vw;
-    height: 100vh;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,5 +15,4 @@ body{
 .container{
     display: flex;
     align-items: center;
-    
 }

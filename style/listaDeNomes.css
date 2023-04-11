@@ -1,0 +1,47 @@
+.nome__produto {
+    position: fixed;
+    bottom: 2em;
+    left: 2em;
+    padding: 2em;
+    box-shadow: 0 0 0.5em black;
+    display: flex;
+    gap: 1em;
+    border-radius: 1em;
+}
+.nome__produto:hover{
+    transition: 0.6s;
+    background-color: rgb(241, 226, 199)
+}
+.nome__produto ul {
+    list-style: none;
+    text-align: center;
+    box-shadow: 0 0 0.5em black;
+    height: 100px;
+    padding: 1.25em;
+    overflow: auto;
+}
+
+.lista__de__nomes li a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.lista__de__nomes li a:hover{
+    transition: 700ms;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.pesquisa__container{
+    display: flex;
+    flex-direction: column;
+}
+.pesquisa__rotulo{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.pesquisa__input{
+    padding: 0.5em;
+    border: none;
+    box-shadow: 0 0 0.5em rgba(0,0,0,0.1);
+}
