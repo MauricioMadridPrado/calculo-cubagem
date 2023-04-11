@@ -83,15 +83,15 @@ export function criaFormulario() {
 
 
     ;
-    // const localNomes = document.getElementById('teste31')
-    // console.log(nomes)
-    // nomes.forEach(nome =>{
-    //   localNomes.innerHTML += 
-    //   `
-    //   <li id="${nome}">${nome}</li>
-    //   `;
-    //   console.log(nome)
-    // })
+    const localNomes = document.getElementById('teste31')
+    console.log(nomes)
+    nomes.forEach(nome =>{
+      localNomes.innerHTML += 
+      `
+      <li id="${nome}">${nome}</li>
+      `;
+      console.log(nome)
+    })
   });
 
 }
