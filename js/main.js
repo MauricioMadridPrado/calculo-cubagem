@@ -23,15 +23,11 @@ linhas.forEach(() => {
 
     valorFinal.innerHTML = totalCubica * quantidadeTotal;
     total = parseFloat(valorFinal.innerHTML)
-
-
   });
-
   i++;
-
-  
 });
 }
 
 
-atualizaTotal()
+
+alteraValor();
