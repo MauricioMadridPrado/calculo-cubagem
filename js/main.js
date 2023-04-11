@@ -21,7 +21,6 @@ function alterandoOValor() {
     valores.push(parseFloat(valor.innerHTML));
     const teste2 = Array.from(valores);
     const valorCubagemTotal = teste2.reduce((a, b) => a + b, 0);
-    console.log(valorCubagemTotal);
     localCubagem.innerHTML = `Total de metros cúbicos: ${valorCubagemTotal.toFixed(2)}`;
   });
   const ondeFicaOValorFinalDaCubagem =

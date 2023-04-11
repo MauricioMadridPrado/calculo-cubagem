@@ -10,7 +10,7 @@ export function alteraValor(){
       contador.addEventListener("change", (event) => {
         let peso = event.target.parentNode.previousSibling.previousSibling.innerHTML;
         
-        console.log(peso)
+
         let posicao = event.target.parentNode.dataset.local;
         let quantidadeTotal = event.target.value;
         let totalCubica = 1;
@@ -23,6 +23,7 @@ export function alteraValor(){
     
     
         valorFinal.innerHTML = totalCubica * quantidadeTotal;
+        console.log(peso * quantidadeTotal)
         total = parseFloat(valorFinal.innerHTML)
       });
       i++;
