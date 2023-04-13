@@ -16,7 +16,7 @@ export function calculaOPeso() {
   
         let pesoFinalProduto = parseFloat(peso) * parseFloat(quantidadeTotal);
   
-        pesoFinal.innerHTML = pesoFinalProduto
+        pesoFinal.innerHTML = pesoFinalProduto.toFixed(4).replace('.', ',');
       })
   
   

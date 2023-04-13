@@ -20,8 +20,8 @@ export function calculaMetragemFinal() {
       const cubagem = Array.from(valores);
       const valorCubagemTotal = cubagem.reduce((a, b) => a + b, 0);
       localCubagem.innerHTML = `Total de metros cúbicos: ${valorCubagemTotal.toFixed(
-        2
-      )}m³`;
+        4
+      ).replace('.', ',')}m³`;
     });
 
   }

@@ -17,7 +17,7 @@ td {
 }
 .tabela__produto,
 .tabela__produto__container {
-  box-shadow: 0 0 0.5em black;
+  box-shadow: 0.5em 0.5em 0.5em black;
   margin: 1em;
   padding: 1em;
   border-radius: 1em;
@@ -29,6 +29,19 @@ td {
   width: 4em;
   text-align: center;
   color:var(--cor-letra)
+}
+.tabela__produto__container::-webkit-scrollbar {
+  width: 18px;
+}
+
+.tabela__produto__container::-webkit-scrollbar-thumb {
+background: var(--for-produtos);
+border-radius: 10px;
+border-left: 4px solid var(--cor-fundo);
+border-right: 4px solid var(--cor-fundo);
+}
+.tabela__produto__container::-webkit-scrollbar-track {
+background: var(--cor-fundo);
 }
 .dados__produto {
 }

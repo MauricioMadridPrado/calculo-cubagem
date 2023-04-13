@@ -18,9 +18,10 @@ export function alteraValor(){
           const valorArredondado = valor.innerHTML
           totalCubica *= valor.innerHTML;
         });
-    
-        valorFinal.innerHTML = totalCubica * quantidadeTotal;
-        total = parseFloat(valorFinal.innerHTML)
+        
+        total = totalCubica * quantidadeTotal;
+        valorFinal.innerHTML = total.toFixed(4).replace('.', ',');
+        // total = parseFloat(valorFinal.innerHTML.toFixed(2))
       });
       i++;
     });
