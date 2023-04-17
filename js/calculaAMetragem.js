@@ -11,5 +11,5 @@ export function metragem(posicao, quantidade) {
       metrosCubicos *= metragem.innerHTML;
     });
     // altera o valor onde é exibido o total metragem de cada produto
-    valorFinal.innerHTML = metrosCubicos;
+    valorFinal.innerHTML = metrosCubicos.toFixed(2);
   }

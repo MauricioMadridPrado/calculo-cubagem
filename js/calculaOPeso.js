@@ -6,5 +6,5 @@ export function peso(posicao, quantidade) {
     // faz o calculo multiplicando o peso pela quantidade
     const peso = parseFloat(pegaOPeso) * parseFloat(quantidade);
     // altera a posição selecionada com o novo valor
-    pesoFinal.innerHTML = peso;
+    pesoFinal.innerHTML = peso.toFixed(2);
   }
