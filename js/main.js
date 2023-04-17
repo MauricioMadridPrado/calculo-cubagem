@@ -24,7 +24,7 @@ function capturaOBotao() {
     // seleciona cada input baseado na posição do data attribute
     const contador = document.querySelector(`[data-contador${i}]`);
     // pra cara input, adicione o evento ao clicar..
-    contador.addEventListener("click", (event) => {
+    contador.addEventListener("change", (event) => {
       // captura a posição do input alterado
       let posicao = event.target.parentNode.dataset.local;
       //   captura o valor do input alterado
