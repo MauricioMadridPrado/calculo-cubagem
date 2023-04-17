@@ -1,68 +1,33 @@
 import { criaFormulario } from "./criaFormulario.js";
-
+import { peso } from "./calculaOPeso.js";
+import { metragem } from "./calculaAMetragem.js";
+import { calculosFinais } from "./calculosFinais.js";
+// cria a lista de produtos baseada no banco de dados
 criaFormulario();
-
+// seleciona todas as linhas da lista de produtos
 const linhas = document.querySelectorAll(".linha__produto");
-
+// função que captura qual input foi alterado
 function capturaOBotao() {
+  // variável utilizada para garantir acerto na seleção
   let i = 0;
-
-  linhas.forEach((linha) => {
+  //   pra cada linha você deve...
+  linhas.forEach(() => {
+    // seleciona cada input baseado na posição do data attribute
     const contador = document.querySelector(`[data-contador${i}]`);
+    // pra cara input, adicione o evento ao clicar..
     contador.addEventListener("click", (event) => {
+      // captura a posição do input alterado
       let posicao = event.target.parentNode.dataset.local;
+      //   captura o valor do input alterado
       let quantidadeTotal = event.target.value;
+      //   chama a função que calcula o peso de cada produto pela quantidade
       peso(posicao, quantidadeTotal);
+      //   chama a função que calcula a metragem de cada produto pela quantidade
       metragem(posicao, quantidadeTotal);
+      //   chama a função que faz o calculo do total pela lista de produtos
       calculosFinais();
     });
     i++;
   });
 }
-
 capturaOBotao();
-
-function peso(posicao, quantidade) {
-  const pegaOPeso = document.querySelector(`[data-peso${posicao}]`).innerHTML;
-  const pesoFinal = document.querySelector(`[data-kilos${posicao}]`);
-  const peso = parseFloat(pegaOPeso) * parseFloat(quantidade);
-  pesoFinal.innerHTML = peso;
-}
-function metragem(posicao, quantidade) {
-  const metragens = document.querySelectorAll(`[data-dado${posicao}]`);
-  const valorFinal = document.querySelector(`[data-total${posicao}]`);
-  let metrosCubicos = 1 * quantidade;
-  metragens.forEach((metragem) => {
-    metrosCubicos *= metragem.innerHTML;
-  });
-  valorFinal.innerHTML = metrosCubicos;
-}
-
-function calculosFinais() {
-  const pegaTodosOsPesos = document.querySelectorAll(".valor__kilos");
-  const localOndeFicaOPeso = document.getElementById("kilogramas");
-
-  const pegaTodasAsMetragens = document.querySelectorAll(".valor__total");
-  const localOndeFicaAMetragem = document.getElementById("total__cubagem");
-
-  let j = 0;
-
-  let pesoInicial = 0;
-
-  pegaTodosOsPesos.forEach((peso) => {
-    peso = peso.innerHTML;
-    let pesoFinal = (pesoInicial += parseFloat(peso));
-    localOndeFicaOPeso.innerHTML = `Total kilos dos produtos: ${pesoFinal
-      .toFixed(2)
-      .replace(".", ",")}Kg`;
-  });
-
-  let metragemInicial = 0;
-  pegaTodasAsMetragens.forEach((metragem) => {
-    metragem = metragem.innerHTML;
-    let metragemFinal = (metragemInicial += parseFloat(metragem));
-    localOndeFicaAMetragem.innerHTML = `Total de metros cúbicos: ${metragemFinal
-      .toFixed(2)
-      .replace(".", ",")}m³`;
-  });
-}
