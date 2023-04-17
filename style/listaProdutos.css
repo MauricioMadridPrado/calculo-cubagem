@@ -51,3 +51,6 @@ background: var(--cor-fundo);
 }
 .tabela__produto__titulo {
 }
+.tabela__selecionada{
+  align-self: self-end;
+}

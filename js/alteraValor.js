@@ -20,7 +20,7 @@ export function alteraValor(){
         });
         
         total = totalCubica * quantidadeTotal;
-        valorFinal.innerHTML = total.toFixed(4).replace('.', ',');
+        valorFinal.innerHTML = total.toFixed(2).replace('.', ',');
         // total = parseFloat(valorFinal.innerHTML.toFixed(2))
       });
       i++;

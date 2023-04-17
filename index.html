@@ -13,41 +13,40 @@
       <h1 class="cabecalho__titulo">Calculo de cubagem</h1>
     </header class="imagens__container"> 
 
-     
-<div class="container">
-    <section class="tabela__produto__container">
-        <table class="tabela__produto">
-          <thead>
-            <tr class="tabela__produto__titulo">
-                <th>Nome produto</th>
-                <th>Altura (m)</th>
-                <th>Largura(m)</th>
-                <th>Comprimento (m)</th>
-                <th>Peso</th>
-                <th>Nª de volumes</th>
-                <th>Metros cúbicos(m³)</th>
-                <th>Peso(kg)</th>
-            </tr>
-          </thead>
+        
+    <div class="container">
+        <section class="tabela__produto__container">
+            <table class="tabela__produto">
+              <thead>
+                <tr class="tabela__produto__titulo">
+                    <th>Nome produto</th>
+                    <th>Altura (m)</th>
+                    <th>Largura(m)</th>
+                    <th>Comprimento (m)</th>
+                    <th>Peso</th>
+                    <th>Nª de volumes</th>
+                    <th>Metros cúbicos(m³)</th>
+                    <th>Peso(kg)</th>
+                </tr>
+              </thead>
+              <tbody class="produtos" id="formulario">
+                <!-- onde vai ir a lista de produtos -->
+              </tbody>
+            </table>
+        </section>
 
-          <tbody class="produtos" id="formulario">
-            <!-- onde vai ir a lista de produtos -->
-          </tbody>
-        </table>
-    </section>
-
-    <section  class="nome__produto">
-        <div id="nome__produto">
-            <!-- onde vai ir os valores finais de metragem e peso -->
-        </div>
-        <div class="pesquisa__container"> 
-          <label class="pesquisa__rotulo" for="pesquisar">Pesquisar</label>
-          <input class="pesquisa__input" id="pesquisa" name="pesquisar" type="text">
-        <ul class="lista__de__nomes" id="lista__de__nomes" >
-            <!-- onde vai ir a lista de nomes -->
-        </div>
-    </section>
-</div>
-<script src="./js/main.js" type="module"></script>
+        <section  class="nome__produto">
+            <div class="pesquisa__container"> 
+              <label class="pesquisa__rotulo" for="pesquisar">Pesquisar</label>
+              <input class="pesquisa__input" id="pesquisa" name="pesquisar" type="text">
+            <ul class="lista__de__nomes" id="lista__de__nomes" >
+                <!-- onde vai ir a lista de nomes -->
+            </div>
+        </section>
+    </div>
+    <div id="nome__produto">
+      <!-- onde vai ir os valores finais de metragem e peso -->
+  </div>
+    <script src="./js/main.js" type="module"></script>
   </body>
 </html>
