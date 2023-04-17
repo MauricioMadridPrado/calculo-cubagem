@@ -47,6 +47,8 @@ export function criaListaDePesquisa(produto) {
       });
     } else {
       // caso de algum erro, ela vai trazer a lista completa
+      listaDeNomes.innerHTML = ' '
+
       nomes.forEach((nome) => {
         listaDeNomes.innerHTML += `
       <li class=""><a href="#${nome}" >${nome}<a></li>
